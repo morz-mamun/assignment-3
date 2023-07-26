@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- daisyUi and tailwindCss link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font lato link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awsome link -->
+  <script src="https://kit.fontawesome.com/752e119f78.js" crossorigin="anonymous"></script>
+
+  <!-- common styles -->
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="font-lato max-w-7xl mx-auto px-5 mt-12 md:px-0 lg:px-0">
+  <header>
+    <!-- nav section -->
+    <!-- nav for phone -->
+    <div class="navbar bg-base-100 md:hidden lg:hidden">
+      <div class="navbar-start">
+        <div class="flex items-center gap-3 flex-1">
+          <img src="images/logo.png" alt="logo">
+          <h2 class="text-2xl font-black">Fruit Burst</h2>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content  z-[1] p-2 shadow bg-base-100 rounded-box">
+            <button class="btn btn-ghost ">Home</button>
+            <button class="btn btn-ghost ">About Us</button>
+            <button class="btn btn-ghost ">Shop</button>
+            <button class="btn btn-ghost ">All Fruits</button>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- nav for dekstop -->
+    <nav
+      class="hidden  md:flex justify-between items-center  bg-[#F85559] rounded-full md:px-12 md:py-8 lg:px-12 lg:py-8 ">
+
+      <div class="flex-1">
+        <button class="btn btn-ghost text-white">Home</button>
+        <button class="btn btn-ghost text-white">About Us</button>
+        <button class="btn btn-ghost text-white">Shop</button>
+        <button class="btn btn-ghost text-white">All Fruits</button>
+      </div>
+
+      <div class="flex items-center gap-3 flex-1">
+        <img src="images/logo.png" alt="logo">
+        <h2 class="text-4xl font-bold text-white">Fruit Burst</h2>
+      </div>
+
+      <div>
+        <div class="relative">
+          <input type="search" name="" id="" placeholder="Search here  " class="rounded-full px-5 py-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6  lg:absolute top-3 right-4 ">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+
+    <section class="mt-14">
+      <!-- carousel start -->
+
+      <div class="carousel w-full">
+      <!-- carousel 1 -->
+        <div id="slide1" class="carousel-item relative w-full flex justify-center items-center">
+
+          <img src="/images/banner1.png" class="w-full" />
+
+          <div class="text-center lg:space-y-3 absolute lg:top-16">
+            <h2 class="text-2xl md:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-white text-xs lg:text-base">We supply highly quality organic products</p>
+            <button class="btn border-0 text-white font-extrabold rounded-lg bg-red-600">Shop Now</button>
+          </div>
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- carousel 2 -->
+        <div id="slide2" class="carousel-item relative w-full flex justify-center items-center">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="text-center lg:space-y-3 absolute lg:top-16">
+            <h2 class="text-2xl md:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-white text-xs lg:text-base">We supply highly quality organic products</p>
+            <button class="btn border-0 text-white font-extrabold rounded-lg bg-red-600">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- carousel 3 -->
+        <div id="slide3" class="carousel-item relative w-full flex justify-center items-center">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="text-center lg:space-y-3 absolute lg:top-16">
+            <h2 class="text-2xl md:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-white text-xs lg:text-base">We supply highly quality organic products</p>
+            <button class="btn border-0 text-white font-extrabold rounded-lg bg-red-600">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- carousel 4 --> 
+        <div id="slide4" class="carousel-item relative w-full flex items-center justify-center">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="text-center lg:space-y-3 absolute lg:top-16">
+            <h2 class="text-2xl md:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-white text-xs lg:text-base">We supply highly quality organic products</p>
+            <button class="btn border-0 text-white font-extrabold rounded-lg bg-red-600">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- carousel end -->
+      <!-- banner bottom -->
+      <div class="hidden md:flex justify-center items-center">
+        <div class="flex justify-around gap-16 rounded-lg drop-shadow-lg bg-white py-10 px-14 absolute bottom-20">
+          <div>
+            <img src="images/fruit1.png" alt="">
+            <p>Grape</p>
+          </div>
+          <div>
+            <img src="images/fruit2.png" alt="">
+            <p>Grape</p>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="">
+            <p>Grape</p>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="">
+            <p>Grape</p>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="">
+            <p>Grape</p>
+          </div>
+        </div>
+      </div>
+      <!-- banner bottom end -->
+    </section>
+
+  </header>
+ 
+  <main>
+   <section class="mt-56">
+    <div class="flex justify-between items-center">
+
+      <div>
+        <h2>Deal of the day</h2>
+        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+          literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+
+      <div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:16;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
